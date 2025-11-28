@@ -53,6 +53,7 @@ body{
 
 .btn_antes_depos{
     height: 300px;
+    width: 100%;
 }
 
 li{
@@ -72,5 +73,26 @@ button{
     padding: 15px;
     border-radius: 50%;
     background-color: rgb(245, 12, 175);
+}
+
+@media screen and (max-width:992px){
+
+    .carossel, .botoes{
+        width: 100%;
+        height: 100%;
+    }
+
+    .btn_antes_depos{
+        display: none;
+    }
+
+    body{
+        background-color: white;
+    }
+
+    .botoes{
+        height: 100px;
+    }
+    
 }
 
