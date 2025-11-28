@@ -18,7 +18,7 @@ botao.appendChild(item)
 foto.appendChild(imagem)
 
 function proximo(){
-    if(c == 7){
+    if(c == quantidade - 1){
        c = 1 
        imagem.setAttribute('src', `./imagens/${c}.jpg`)
     }else{
@@ -30,7 +30,7 @@ function proximo(){
 
 function voltar(){
     if(c == 1){
-       c = 7 
+       c = quantidade - 1
        imagem.setAttribute('src', `./imagens/${c}.jpg`)
     }else{
        c = c - 1
